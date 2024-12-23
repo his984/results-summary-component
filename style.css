@@ -1,6 +1,7 @@
 @font-face {
   font-family: "Hanken Grotesk";
-  src: url("/fonts/HankenGrotesk-VariableFont_wght.ttf") format("truetype");
+  src: url("/assets/fonts/HankenGrotesk-VariableFont_wght.ttf")
+    format("truetype");
   font-weight: 100 900;
   font-style: normal;
 }
@@ -82,7 +83,7 @@ body {
   margin-bottom: 10px;
 }
 .result-text p {
-  font-size: 18px;
+  font-size: 16px;
   color: hsl(241, 100%, 89%);
 }
 /* ===SUMMARY=== */
@@ -157,4 +158,22 @@ body {
 }
 .summary-content > a:hover {
   background-color: hsl(252, 89%, 57%);
+}
+
+/* ===Responsive=== */
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 15px 0;
+    border-radius: 0;
+  }
+
+  .result,
+  .summary {
+    width: 100%;
+    border-radius: 0 0 20px 20px;
+    padding: 25px 0;
+  }
 }
